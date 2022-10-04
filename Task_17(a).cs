@@ -13,7 +13,7 @@ namespace Training_CSharp
         public void Write()
         {
             
-            FileInfo fileInfo = new FileInfo(@"C:\Users\EI13141\Task17.txt");
+            FileInfo fileInfo = new FileInfo(@"C:\Users\EI13141\sample.txt");
             FileStream fileStream = fileInfo.Open(FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
             StreamWriter writer = new StreamWriter(fileStream);
             try
@@ -37,7 +37,7 @@ namespace Training_CSharp
 
             //Specify the filename and the path of the file to be created 
             //Fileinfo - class
-            FileInfo fileInfo = new FileInfo(@"C:\Users\EI13141\Task17.txt");
+            FileInfo fileInfo = new FileInfo(@"C:\Users\EI13141\sample.txt");
             FileStream fileStream = fileInfo.Open(FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
             StreamReader reader = new StreamReader(fileStream);
             try
@@ -67,11 +67,11 @@ namespace Training_CSharp
 
 
             //Move
-            //File.Move(@"C:\Users\EI13141\Task17.txt", @"C:\Users\EI13141\source\Task17.txt");
+            //File.Move(@"C:\Users\EI13141\sample.txt", @"C:\Users\EI13141\source\sample.txt");
 
             //Copy
-           string path = @"C:\Users\EI13141\Task17.txt";
-            //string destination = @"C:\Users\EI13141\source\Task17_Copy";
+           string path = @"C:\Users\EI13141\c_sample.txt";
+            //string destination = @"C:\Users\EI13141\c_sample.txt";
             //File.Copy(path, destination);
 
             //Delete files
@@ -80,9 +80,9 @@ namespace Training_CSharp
             //Read First line from the file
             string[] content;
             content = File.ReadAllLines(path);
-            //Console.WriteLine(content[0]);
+            Console.WriteLine(content[0]);
 
-            var lineCount = File.ReadLines(@"C:\Users\EI13141\Task17.txt").Count();
+            var lineCount = File.ReadLines(@"C:\Users\EI13141\c_sample.txt").Count();
             Console.WriteLine(lineCount);
 
 
