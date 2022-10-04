@@ -16,8 +16,8 @@ namespace Training_CSharp
         /// </summary>
         public void File_demo()
         {
-            File.WriteAllText(@"C:\TE2.txt", "I am WriteAllText method from File class");
-            string path = @"C:\TE2.txt";
+            File.WriteAllText(@"C:\Users\EI13141\Archana_TE.txt", "I am WriteAllText method from File class");
+            string path = @"C:\Users\EI13141\Archana_TE.txt";
             FileInfo fi = new FileInfo(path);
             Console.WriteLine(fi.FullName);
             Console.WriteLine(fi.Name);
@@ -32,7 +32,7 @@ namespace Training_CSharp
         /// </summary>
         public void Directory_demo()
         {
-            foreach (string file in Directory.GetFiles(@"C:\"))
+            foreach (string file in Directory.GetFiles(@"C:\Users\EI13141"))
             {
                 Console.WriteLine(file);
             }

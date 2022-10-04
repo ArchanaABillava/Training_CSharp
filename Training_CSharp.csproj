@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Training_CSharp.Mobile_RegularExp_Task14</StartupObject>
+    <StartupObject>Training_CSharp.Task_17_a_</StartupObject>
   </PropertyGroup>
 
 </Project>

@@ -15,12 +15,12 @@ namespace Training_CSharp
         {
             //Specify the filename and the path of the file to be created 
             //Fileinfo - class
-            FileInfo fileInfo = new FileInfo(@"C:\TE.txt");
+            FileInfo fileInfo = new FileInfo(@"C:\Users\EI13141\Archana_TE.txt");
             FileStream fileStream = fileInfo.Open(FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
             StreamWriter writer = new StreamWriter(fileStream);
             try
             {
-                writer.WriteLine("Welcome to Files Concept Trainees......");
+                writer.WriteLine("Archana A Billava from .NET Stream");
             }
             catch (FileNotFoundException ex)
             {
@@ -42,7 +42,7 @@ namespace Training_CSharp
 
             //Specify the filename and the path of the file to be created 
             //Fileinfo - class
-            FileInfo fileInfo = new FileInfo(@"C:\TE.txt");
+            FileInfo fileInfo = new FileInfo(@"C:\Users\EI13141\Archana_TE.txt");
             FileStream fileStream = fileInfo.Open(FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
             StreamReader reader = new StreamReader(fileStream);
             try
@@ -68,12 +68,12 @@ namespace Training_CSharp
         {
             //Specify the filename and the path of the file to be created 
             //Fileinfo - class
-            FileInfo fileInfo = new FileInfo(@"C:\TE.txt");
+            FileInfo fileInfo = new FileInfo(@"C:\Users\EI13141\Archana_TE.txt");
             FileStream fileStream = fileInfo.Open(FileMode.Append, FileAccess.Write, FileShare.ReadWrite);
             StreamWriter writer = new StreamWriter(fileStream);
             try
             {
-                writer.WriteLine("Welcome to Files Concept Trainees......This is an append method");
+                writer.WriteLine("Trainee at Tietoevry");
             }
             catch (FileNotFoundException ex)
             {
@@ -95,9 +95,9 @@ namespace Training_CSharp
         {
             Files_Demo demo = new Files_Demo();
             demo.Write();
-            demo.read();
-            demo.append();
-            demo.read();
+           demo.read();
+           demo.append();
+           demo.read();
         }
     }
 }

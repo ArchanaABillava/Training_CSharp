@@ -19,7 +19,7 @@ namespace Training_CSharp
         public void write()
         {
             //Resource management - > Dispose()
-            using (StreamWriter sw = File.CreateText(@"C:\TE3.txt"))
+            using (StreamWriter sw = File.CreateText(@"C:\Users\EI13141\Archana_TE.txt"))
             {
                 for (int i = 0; i < 5; i++)
                 {
@@ -32,7 +32,7 @@ namespace Training_CSharp
         /// </summary>
         public void read()
         {
-            using (StreamReader sr = File.OpenText(@"C:\TE3.txt"))
+            using (StreamReader sr = File.OpenText(@"C:\Users\EI13141\Archana_TE.txt"))
             {
                 string contents = null;
                 while ((contents = sr.ReadLine()) != null)

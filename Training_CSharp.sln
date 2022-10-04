@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Training_CSharp", "Training_CSharp.csproj", "{A99DE711-CC00-4A07-9CF0-3B064004567B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Training_CSharp", "Training_CSharp.csproj", "{A99DE711-CC00-4A07-9CF0-3B064004567B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "training_CSharp_Internal", "..\training_CSharp_Internal\training_CSharp_Internal.csproj", "{525979DF-7FCB-4AC0-900A-5ECFF46F97EF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A99DE711-CC00-4A07-9CF0-3B064004567B} = {A99DE711-CC00-4A07-9CF0-3B064004567B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{A99DE711-CC00-4A07-9CF0-3B064004567B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A99DE711-CC00-4A07-9CF0-3B064004567B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A99DE711-CC00-4A07-9CF0-3B064004567B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{525979DF-7FCB-4AC0-900A-5ECFF46F97EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{525979DF-7FCB-4AC0-900A-5ECFF46F97EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{525979DF-7FCB-4AC0-900A-5ECFF46F97EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{525979DF-7FCB-4AC0-900A-5ECFF46F97EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
